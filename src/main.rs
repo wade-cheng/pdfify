@@ -3,7 +3,7 @@ use image::io::Reader as ImageReader;
 use std::process::Command;
 use std::fs;
 
-/// A program that takes image files and combines them into a pdf using imagemagick's `convert`. Supported image types depend on https://crates.io/crates/image#supported-image-formats
+/// A program that preprocesses image files with Rust and combines them into a pdf with imagemagick. Supported image types depend on https://crates.io/crates/image#supported-image-formats
 #[derive(Parser)]
 #[command(version, about, long_about = None)]
 struct Cli {
