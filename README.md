@@ -1,3 +1,5 @@
+# pdfify
+
 A program that preprocesses image files with Rust and combines them into a pdf with imagemagick. Supported image types depend on https://crates.io/crates/image#supported-image-formats.
 
 ```
@@ -15,3 +17,5 @@ Options:
   -h, --help                 Print help
   -V, --version              Print version
 ```
+
+As a student, I often take pictures of my work and upload them to websites like GradeScope for evaluation. The GradeScope mobile app would be great if it didn't constantly crash on my Android phone. This is meant to be a substitute the first alternative I found, [Openscan](https://github.com/ethereal-developers/OpenScan), because that app seems to shrink images before they are processed into a clean pdf. 
