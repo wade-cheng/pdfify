@@ -19,3 +19,10 @@ Options:
 ```
 
 As a student, I often take pictures of my work and upload them to websites like GradeScope for evaluation. The GradeScope mobile app would be great if it didn't constantly crash on my Android phone. This is meant to be a substitute for the first alternative I found, [Openscan](https://github.com/ethereal-developers/OpenScan), because that app seems to shrink images before they are processed into a clean pdf. 
+
+## Installation
+
+Requires imagemagick's `convert`. Old versions of GhostScript, a pdf conversion dependency, appear to have a security flaw. So, converting images to pdfs is disabled by default. Refer to [this post](https://askubuntu.com/questions/1127260/imagemagick-convert-not-allowed) to renable the feature.
+
+On a system with Rust [installed](https://doc.rust-lang.org/book/ch01-01-installation.html) (which includes its `cargo` package manager), run 
+```cargo install --git https://github.com/wade-cheng/pdfify```.
